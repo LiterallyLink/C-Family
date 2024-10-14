@@ -16,9 +16,8 @@ int get_float_input(const char* prompt, float* value) {
 
     input[strcspn(input, "\n")] = 0;
 
-    // Check if the input is 'q'
     if (strcmp(input, "q") == 0) {
-        return -1; // Special value to indicate quit
+        return -1; 
     }
 
     *value = strtof(input, &endptr);
